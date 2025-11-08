@@ -1,0 +1,28 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+client/dist/
+server/dist/
+
+# Env & secrets
+.env
+client/.env
+server/.env
+
+# Logs & coverage
+logs/
+*.log
+coverage/
+
+# Docker
+**/*.local
+docker-data/
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/

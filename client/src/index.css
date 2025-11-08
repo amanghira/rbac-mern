@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark animated gradient banner */
+.cu-dark-gradient {
+  background: linear-gradient(135deg, #D61F26 0%, #A8161B 40%, #0B0F19 100%);
+  background-size: 200% 200%;
+  animation: gradient 16s ease infinite;
+}
+
+/* Dark glass cards */
+.card {
+  @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-soft;
+}
+.input {
+  @apply w-full rounded-xl border border-white/15 bg-white/5 text-white placeholder-white/60 px-3 py-2 outline-none focus:ring-2 focus:ring-[#D61F26]/40;
+}
+.btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-semibold transition; }
+.btn-primary { @apply bg-[#D61F26] hover:bg-[#A8161B] text-white; }
+.btn-soft { @apply bg-white/10 hover:bg-white/15 text-white; }
+.badge { @apply inline-flex items-center px-2 py-0.5 rounded-lg text-xs font-medium bg-white/10 border border-white/15 text-white; }
+.text-dim { @apply text-white/70 }
